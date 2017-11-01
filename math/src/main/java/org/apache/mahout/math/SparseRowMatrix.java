@@ -21,6 +21,8 @@ import org.apache.mahout.math.flavor.MatrixFlavor;
 import org.apache.mahout.math.flavor.TraversingStructureEnum;
 import org.apache.mahout.math.function.DoubleDoubleFunction;
 import org.apache.mahout.math.function.Functions;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Iterator;
 
@@ -32,6 +34,8 @@ public class SparseRowMatrix extends AbstractMatrix {
   private Vector[] rowVectors;
 
   private final boolean randomAccessRows;
+
+  private static final Logger log = LoggerFactory.getLogger(SparseRowMatrix.class);
 
   /**
    * Construct a sparse matrix starting with the provided row vectors.
