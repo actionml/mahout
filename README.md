@@ -1,3 +1,25 @@
+This is a testing fork of a speedup for the CCO algorithm used in the Universal Recommender.
+
+You will need to build this using Scala 2.11. Follow these instructions
+
+ - install Scala 2.11 as your default version
+ - download this repo: `git clone https://github.com/actionml/mahout.git`
+ - checkout the speedup branch: `git checkout sparse-speedup-13.0`
+ - edit the build script `build-scala-2.11.sh` to put the custom repo where you want it
+ - execute the build script `build-scala-2.11.sh`
+
+ Once this has created a local maven repo you can proceed to build the UR but make sure to add the line:
+
+```
+  resolvers += "Local Repository" at "file:///path/to/.custom-scala-m2/repo"
+```
+
+to the `build.sbt` for the UR replacing the `path/to` with yours.
+
+
+
+
+
 <!--
 Licensed to the Apache Software Foundation (ASF) under one or more
 contributor license agreements.  See the NOTICE file distributed with
