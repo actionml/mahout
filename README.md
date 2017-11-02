@@ -18,10 +18,7 @@ You will need to build this using Scala 2.11. Follow these instructions
 
 to the `build.sbt` for the UR replacing the `path/to` with yours.
 
-
-
-
-
+=============
 <!--
 Licensed to the Apache Software Foundation (ASF) under one or more
 contributor license agreements.  See the NOTICE file distributed with
