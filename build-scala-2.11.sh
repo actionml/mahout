@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-git checkout sparse-speedup-13.0
+git checkout --track sparse-speedup-13.0
 
 mvn clean package -DskipTests -Phadoop2 -Dspark.version=2.1.1 -Dscala.version=2.11.11 -Dscala.compat.version=2.11
 
